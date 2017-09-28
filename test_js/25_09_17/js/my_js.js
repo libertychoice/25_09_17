@@ -42,6 +42,9 @@ class RR extends Red {
     getTT(){
         return this.tt
     }
+    getText(){
+        super.getTest()
+    }
 }
 
 function red(a,v){
