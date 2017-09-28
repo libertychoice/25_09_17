@@ -12,6 +12,7 @@ class Red {
     constructor(a,v){
         this.test = a
         this.fire = v
+        this._ff
     }
 
     getTest(){
@@ -22,12 +23,26 @@ class Red {
         return this.fire
     }
     get Field(){
-        return "Text Field"
+        return this._ff
+    }
+    set Field(f){
+        if(typeof f == 'number'){
+        this._ff=f
+        }
     }
 }
 
 
+class RR extends Red {
+    constructor(s,f){
+        super(s,f)
+        this.tt = "tt"
+    }
 
+    getTT(){
+        return this.tt
+    }
+}
 
 function red(a,v){
     this.test = a
