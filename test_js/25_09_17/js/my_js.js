@@ -8,6 +8,46 @@ block comment
 
 //call
 //apply
+class Red {
+    constructor(a,v){
+        this.test = a
+        this.fire = v
+    }
+
+    getTest(){
+        return this.test
+    }
+
+    getFire(){
+        return this.fire
+    }
+    get Field(){
+        return "Text Field"
+    }
+}
+
+
+
+
+function red(a,v){
+    this.test = a
+    this.fire = v
+}
+
+red.prototype={
+    getTest:function(){
+        return this.test
+    },
+
+    getFire:function(){
+        return this.fire
+    },
+    Field:"Test Field"
+}
+
+red()
+
+r = new red();
 
 let obj2 = {
     red:"green",
