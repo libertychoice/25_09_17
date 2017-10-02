@@ -182,3 +182,26 @@ console.log(d);
 var x; //function
 let y; //2015  block
 const z=3; //2015 if simple  const else variable block
+
+
+
+function listToArray (list,arr){
+    arr.push(list.value)
+    if (list.rest){
+        return listToArray(list.rest, arr)
+    }
+    else {
+        return arr
+    }
+} if (i % 2 === 0) {
+    ev = "#"
+    nev = " "
+}
+
+Promise.reject
+Promise.resolve
+new Promise(()=>{
+    return 5;
+},()=>{})
+.then(()=>{})
+.catch(()=>{})//reject
